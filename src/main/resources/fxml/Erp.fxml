@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="374.0" prefWidth="549.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.montadhr.stockManagement.controllers.ErpController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox layoutX="14.0" layoutY="14.0" prefHeight="346.0" prefWidth="521.0">
+      <children>
+        <Pane prefHeight="72.0" prefWidth="521.0">
+          <children>
+            <Text fill="RED" fontSmoothingType="GRAY" layoutX="204.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" textAlignment="CENTER">
+              <font>
+                <Font size="30.0" />
+              </font>
+            </Text>
+          </children>
+        </Pane>
+        <HBox prefHeight="260.0" prefWidth="493.0">
+          <children>
+            <Button fx:id="gestionstock" onAction="#handleSubmitGestionStock" mnemonicParsing="false" prefHeight="245.9998779296875" prefWidth="172.0" text="Gestion de stock" />
+            <Button fx:id="ressourcehumaine" onAction="#handleSubmitRH" mnemonicParsing="false" prefHeight="245.9998779296875" prefWidth="172.0" text="Ressources humaine" />
+            <Button fx:id="gestionvente" onAction="#handleSubmitGestionVente" mnemonicParsing="false" prefHeight="246.0" prefWidth="172.0" text="Gestion de vente" />
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

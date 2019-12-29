@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="520.0" prefWidth="676.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox layoutX="14.0" layoutY="14.0" prefHeight="492.0" prefWidth="648.0">
+      <children>
+        <Pane prefHeight="67.0" prefWidth="648.0">
+          <children>
+            <Text fill="#ff3333" layoutX="256.0" layoutY="38.0" scaleX="4.187740665161537" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion de Vente" textAlignment="CENTER">
+              <font>
+                <Font size="13.0" />
+              </font>
+            </Text>
+          </children>
+        </Pane>
+        <HBox prefHeight="67.0" prefWidth="648.0">
+          <children>
+            <HBox prefHeight="67.0" prefWidth="311.0">
+              <children>
+                <TextField prefWidth="200.0" promptText="Nom Client">
+                  <HBox.margin>
+                    <Insets top="20.0" fx:id="x1" />
+                  </HBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" text="Ajouter client">
+                  <HBox.margin>
+                    <Insets left="10.0" top="20.0" fx:id="x2" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+            <HBox prefHeight="67.0" prefWidth="311.0">
+              <children>
+                <TextField prefWidth="200.0" promptText="Nom Article" HBox.margin="$x1" />
+                <Button mnemonicParsing="false" text="Ajouter Article" HBox.margin="$x2" />
+              </children>
+              <HBox.margin>
+                <Insets left="22.0" fx:id="x5" />
+              </HBox.margin>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="344.0" prefWidth="648.0">
+          <children>
+            <VBox prefHeight="344.0" prefWidth="311.0">
+              <children>
+                <Pane prefHeight="52.0" prefWidth="311.0">
+                  <children>
+                    <Text layoutX="121.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les Clients" textAlignment="CENTER">
+                      <fill>
+                        <Color blue="0.584" green="0.200" red="1.000" fx:id="x3" />
+                      </fill>
+                      <font>
+                        <Font size="15.0" fx:id="x4" />
+                      </font>
+                    </Text>
+                  </children>
+                </Pane>
+                <ListView prefHeight="278.0" prefWidth="311.0" />
+              </children>
+            </VBox>
+            <VBox prefHeight="344.0" prefWidth="311.0" HBox.margin="$x5">
+              <children>
+                <Pane prefHeight="52.0" prefWidth="311.0">
+                  <children>
+                    <Text fill="$x3" font="$x4" layoutX="119.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les Articles" />
+                  </children>
+                </Pane>
+                <ListView prefHeight="278.0" prefWidth="311.0" />
+              </children>
+            </VBox>
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

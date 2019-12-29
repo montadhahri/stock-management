@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="312.0" prefWidth="413.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.montadhr.stockManagement.controllers.ShowOperationsController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox layoutX="14.0" layoutY="14.0" prefHeight="284.0" prefWidth="391.0">
+      <children>
+        <Pane prefHeight="88.0" prefWidth="437.0">
+          <children>
+            <Text fx:id="titleText" fill="RED" layoutX="145.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Show Operations">
+              <font>
+                <Font name="System Bold" size="16.0" />
+              </font>
+            </Text>
+          </children>
+        </Pane>
+        <HBox prefHeight="186.0" prefWidth="399.0">
+          <children>
+            <Button mnemonicParsing="false" onAction="#handleSubmitStockAction" prefHeight="172.0" prefWidth="175.0" text="Mouvement De Stock">
+              <HBox.margin>
+                <Insets left="5.0" top="5.0" />
+              </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleSubmitCommandeAction" prefHeight="172.0" prefWidth="175.0" text="Livraison">
+              <HBox.margin>
+                <Insets left="30.0" top="5.0" />
+              </HBox.margin>
+            </Button>
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

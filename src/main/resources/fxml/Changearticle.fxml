@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="245.0" prefWidth="427.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.montadhr.stockManagement.controllers.ChangeArticleController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox layoutX="14.0" layoutY="14.0" prefHeight="217.0" prefWidth="399.0">
+      <children>
+        <Pane prefHeight="102.0" prefWidth="399.0">
+          <children>
+            <Text fill="#ff3333" layoutX="104.0" layoutY="31.0" scaleX="1.9872456630011455" scaleY="2.984339981441985" strokeType="OUTSIDE" strokeWidth="0.0" text="Donner nombre de piece a changer" />
+          </children>
+        </Pane>
+        <HBox prefHeight="71.0" prefWidth="399.0">
+          <children>
+            <TextField fx:id="nmbrePiece" prefHeight="32.0" prefWidth="200.0" promptText="nombre piece">
+              <HBox.margin>
+                <Insets top="20.0" />
+              </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#handleSubmitSaveAction" text="save">
+              <HBox.margin>
+                <Insets left="20.0" top="25.0" />
+              </HBox.margin>
+            </Button>
+          </children>
+        </HBox>
+        <Pane prefHeight="47.63287353515625" prefWidth="399.0">
+          <children>
+            <Text fx:id="errorText" layoutX="188.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+          </children>
+        </Pane>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

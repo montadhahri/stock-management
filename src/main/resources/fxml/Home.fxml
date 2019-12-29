@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="290.0" prefWidth="553.9999000000025" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.montadhr.stockManagement.controllers.HomeController">
+  <children>
+    <FlowPane hgap="0.0" layoutX="14.0" layoutY="14.0" prefHeight="262.0" prefWidth="525.9998779296875">
+      <children>
+        <Pane prefHeight="43.0" prefWidth="512.0" FlowPane.margin="$x1">
+          <children>
+            <Text fx:id="titleScene" fill="#ff3333" layoutX="221.0" layoutY="27.0" scaleX="0.49691169725045603" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="LEFT">
+              <font>
+                <Font name="Arial Bold" size="27.0" />
+              </font>
+            </Text>
+            <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleReturnButtonAction" text="Return" textFill="#331800">
+              <font>
+                <Font name="System Bold" size="12.0" fx:id="x2" />
+              </font>
+            </Button>
+          </children>
+          <padding>
+            <Insets left="5.0" right="5.0" fx:id="x1" />
+          </padding>
+        </Pane>
+        <Pane prefHeight="51.0" prefWidth="512.0">
+          <children>
+            <TextField fx:id="newMachine" layoutX="130.0" layoutY="14.0" prefWidth="312.0" />
+            <Text fx:id="title" font="$x2" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Button blendMode="SRC_OVER" font="$x2" layoutX="456.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" text="Add" textFill="#1000cc" textOverrun="ELLIPSIS" />
+          </children>
+        </Pane>
+        <Pane prefHeight="200.0" prefWidth="512.0">
+          <children>
+            <ListView fx:id="machineView" layoutX="18.0" layoutY="14.0" onMouseClicked="#setOnMouseClicked" prefHeight="172.0" prefWidth="480.0" />
+          </children>
+        </Pane>
+      </children>
+    </FlowPane>
+  </children>
+</AnchorPane>

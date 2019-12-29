@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="588.0" prefWidth="612.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox layoutX="14.0" layoutY="14.0" prefHeight="560.0" prefWidth="584.0">
+      <children>
+        <Pane prefHeight="58.0" prefWidth="584.0">
+          <children>
+            <Text layoutX="258.0" layoutY="34.0" scaleX="3.98147167813658" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+          </children>
+        </Pane>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

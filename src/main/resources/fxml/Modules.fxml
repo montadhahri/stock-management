@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="528.0" prefWidth="766.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.montadhr.stockManagement.controllers.ModulesController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox layoutX="14.0" layoutY="14.0" prefHeight="500.0" prefWidth="738.0">
+      <children>
+        <Pane prefHeight="84.0" prefWidth="552.0">
+          <children>
+            <Text fill="RED" layoutX="349.0" layoutY="47.0" scaleX="8.657246584814109" scaleY="3.625020868300519" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" />
+          </children>
+        </Pane>
+        <Pane prefHeight="200.0" prefWidth="200.0">
+          <children>
+            <Text fill="#0029ff" layoutX="313.0" layoutY="22.0" scaleX="5.565389902208012" scaleY="1.7518355359765052" strokeType="OUTSIDE" strokeWidth="0.0" text="articles attents stock de securite">
+              <font>
+                <Font size="10.0" />
+              </font>
+            </Text>
+            <TableView id="articleSecuriteList" fx:id="articleSecuriteTable" layoutX="84.0" layoutY="45.0" prefHeight="155.0" prefWidth="538.3846435546875">
+              <columns>
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="185.0" text="Piece" fx:id="pieceColumn" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="120.0" text="Quantité restant" fx:id="qteColumn" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="123.0" text="Stock" fx:id="stockColumn" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="107.0" text="Livraison" fx:id="livraisonColumn" />
+              </columns>
+            </TableView>
+          </children>
+        </Pane>
+        <HBox prefHeight="192.00009999999747" prefWidth="552.0">
+          <children>
+            <Button mnemonicParsing="false" onAction="#handleSubmitPrevisionnelleAction" prefHeight="173.0" prefWidth="176.0" text="Prévisionnelle">
+              <HBox.margin>
+                <Insets left="5.0" right="5.0" fx:id="x1" />
+              </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleSubmitStockAction" prefHeight="179.0" prefWidth="176.0" text="Mouvement De Stock">
+              <HBox.margin>
+                <Insets right="5.0" />
+              </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleSubmitCommandeAction" prefHeight="173.0" prefWidth="176.0" text="Livraison" />
+            <Button fx:id="atelier" mnemonicParsing="false" onAction="#handleSubmitAtelierAction" prefHeight="173.0" prefWidth="176.0" text="Base de donnée de machines" textFill="BLACK" HBox.margin="$x1" />
+          </children>
+          <padding>
+            <Insets top="20.0" />
+          </padding>
+          <VBox.margin>
+            <Insets />
+          </VBox.margin>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
